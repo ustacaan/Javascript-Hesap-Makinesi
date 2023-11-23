@@ -1,0 +1,71 @@
+.calculator {
+  width: 335px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  width: 305px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+input[type="button"] {
+  width: 70px;
+  height: 40px;
+  margin: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+  background-color: #ddd;
+}
+
+input[value="+"],
+input[value="-"],
+input[value="*"],
+input[value="/"] {
+    background-color: #ffcc00;
+}
+
+input[value="+"]:hover,
+input[value="-"]:hover,
+input[value="*"]:hover,
+input[value="/"]:hover {
+    background-color: #66ff00;
+}
+
+input[value="="] {
+    display: inline-block;
+    border: 1px solid #3079ED;
+    border-radius: 1px;
+    width: 19.5%;
+    text-align: center;
+    padding: 95px 10px;
+    margin: -195px 10px 10px 0;
+    border-radius: 5px;
+    vertical-align: top;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #4d90fe;
+    transition: all .2s ease-in-out;
+    float: right;
+}
+
+input[value="="]:hover {
+    background-color: #ffffff;
+    color: #3079ED;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
